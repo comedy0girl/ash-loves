@@ -1,0 +1,23 @@
+footer {
+	background-color: $black;
+	color: $white;
+	height: 300px;
+	@include vertical;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	
+	a {
+		color: $white;
+	}
+	div {
+		
+		.left, .middle, .right {
+			padding: 2rem;
+
+		}
+		
+	}
+		
+}

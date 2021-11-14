@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: 'arconregular';
+    src: url('./font-files/arcon-regular-webfont.woff2') format('woff2'),
+         url('./font-files/arcon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arconrounded-regular';
+    src: url('./font-files/arcon-rounded-regular-webfont.woff2') format('woff2'),
+         url('./font-files/arcon-rounded-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passion_oneblack';
+    src: url('./font-files/passionone-black-webfont.woff2') format('woff2'),
+         url('./font-files/passionone-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passion_onebold';
+    src: url('./font-files/passionone-bold-webfont.woff2') format('woff2'),
+         url('./font-files/passionone-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passionbold';
+    src: url('./font-files/passionone-regular-webfont.woff2') format('woff2'),
+         url('./font-files/passionone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

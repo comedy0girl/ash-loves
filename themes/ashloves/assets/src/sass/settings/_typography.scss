@@ -1,0 +1,46 @@
+$font-main: 'arconregular';
+$font-headings: 'passionbold';
+
+:root {
+   font-size: 16px;
+}
+
+
+
+
+body {
+    font-family: $font-main;
+    -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+    -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: $font-headings;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+
+}
+h1 {
+   font-size: 5rem;
+}
+h2 {
+   font-size: 4rem;
+   webkit-text-stroke-width: 2px;
+-moz-text-stroke-width: 2px;
+-webkit-text-stroke-color: #111827;
+-moz-text-stroke-color: #111827;
+color: transparent;
+  
+}
+
+a {
+   text-decoration: none;
+}
+li {
+   list-style: none;
+}
+p {
+   font-family: $font-main;
+   
+}

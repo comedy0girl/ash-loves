@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://ASH_LOVES/./src/sass/pages/singles.scss"],"names":[],"mappings":"AAAA;EACC,sBAAsB","file":"css/singles.css","sourcesContent":["main {\r\n\tbackground-color: blue;\r\n}"],"sourceRoot":""}

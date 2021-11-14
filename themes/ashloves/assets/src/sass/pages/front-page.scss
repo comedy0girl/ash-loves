@@ -1,0 +1,94 @@
+// Essentials.
+@import "../essentials";
+@import "../components/header";
+@import "~animate.css/animate.css";
+
+.squishy {
+      	background-image: var(--squishy-image);
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+}
+.tp-caption.splats {
+	width: 400px;
+	height: 50%;
+	position: relative;
+	img {
+		max-width: 100%;
+	}
+	// animation-name: splats;
+ //  	animation-duration: 10s;
+ //  	animation-iteration-count: infinite;
+}
+.tp-caption.snails {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	img {
+		max-height: 100%;
+	}
+}
+
+section.what-i-do {
+	.boxes-inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+		.boxey {
+
+			@include vertical;
+	
+			h2.shadow-stroke {
+			-webkit-text-stroke-width: 2px;
+			-moz-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #111827;
+			-moz-text-stroke-color: #111827;
+			color: transparent;
+			text-shadow: var(--text-shadow);
+
+			}
+
+			height: 50vh;
+			&:nth-child(odd) {
+				background-color: var(--brightBlue);
+				&:hover {
+					opacity: 0.5;
+				}
+			}	
+			&:nth-child(even) {
+				background-color: var(--brightPurple);
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+
+		}
+	}
+	
+	
+}
+
+section.come-back-soon {
+	background-image: var(--coaster-bg);
+	background-position: 50% 117px;
+	height: 600px;
+	position: static;
+	padding: 0;
+	padding-top: 0px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center 0;
+	background-attachment: fixed;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+}

@@ -1,0 +1,641 @@
+
+@font-face {
+    font-family: 'arconregular';
+    src: url(../../src/library/fonts/font-files/arcon-regular-webfont.woff2) format('woff2'),
+         url(../../src/library/fonts/font-files/arcon-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arconrounded-regular';
+    src: url(../../src/library/fonts/font-files/arcon-rounded-regular-webfont.woff2) format('woff2'),
+         url(../../src/library/fonts/font-files/arcon-rounded-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passion_oneblack';
+    src: url(../../src/library/fonts/font-files/passionone-black-webfont.woff2) format('woff2'),
+         url(../../src/library/fonts/font-files/passionone-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passion_onebold';
+    src: url(../../src/library/fonts/font-files/passionone-bold-webfont.woff2) format('woff2'),
+         url(../../src/library/fonts/font-files/passionone-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'passionbold';
+    src: url(../../src/library/fonts/font-files/passionone-regular-webfont.woff2) format('woff2'),
+         url(../../src/library/fonts/font-files/passionone-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*---------------------------------
+		Color Variables
+-----------------------------------*/
+:root {
+  font-size: 16px; }
+
+body {
+  font-family: "arconregular";
+  -moz-osx-font-smoothing: grayscale;
+  /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased;
+  /*(For Chrome and Safari)*/ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "passionbold";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem;
+  webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #111827;
+  -moz-text-stroke-color: #111827;
+  color: transparent; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+p {
+  font-family: "arconregular"; }
+
+:root,
+:root.light {
+  --bg-color: #ffffff;
+  --text-color: #171717;
+  --brightBlue: #0fbdbd;
+  --brightPurple: #be77df;
+  --grey: #424242;
+  --squishy-image: url(../../src/img/squish-day1.png);
+  --coaster-bg: url(../../src/img/coaster-day.png);
+  --port-overlay: rgba(15, 189, 189, 0.70);
+  --text-shadow: 6px 6px white; }
+
+:root.halloween-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --brightBlue: #DB4500;
+  --brightPurple: #330080;
+  --squishy-image: url(../../src/img/squish-night.png);
+  --coaster-bg: url(../../src/img/coaster-night.png);
+  --port-overlay: rgba(51, 0, 128, 0.70);
+  --text-shadow: 6px 6px white; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color); }
+
+footer {
+  background-color: #171717;
+  color: #ffffff;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center; }
+  footer a {
+    color: #ffffff; }
+  footer div .left, footer div .middle, footer div .right {
+    padding: 2rem; }
+
+nav {
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: var(--bg-color); }
+  nav .nav_wrap {
+    max-width: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+    height: 100px; }
+  nav .nav ul {
+    display: inline-flex;
+    grid-gap: 2%;
+    width: 100%; }
+    nav .nav ul li {
+      display: inline; }
+      nav .nav ul li a {
+        color: var(--text-color);
+        font-weight: bold;
+        text-transform: uppercase; }
+        nav .nav ul li a:hover {
+          color: var(--brightBlue); }
+      nav .nav ul li ul.sub-menu {
+        display: none; }
+  nav .switch {
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */ }
+    nav .switch .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px; }
+    nav .switch .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    nav .switch .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #DB4500;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    nav .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    nav .switch input:checked + .slider {
+      background-color: #0fbdbd; }
+    nav .switch input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3; }
+    nav .switch input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px); }
+    nav .switch .slider.round {
+      border-radius: 34px; }
+    nav .switch .slider.round:before {
+      border-radius: 50%; }
+
+.theme-btn {
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent; }
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.home-header {
+  height: 100vh;
+  background-image: repeating-linear-gradient(-45deg, rgba(102, 99, 99, 0.25), rgba(81, 77, 77, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 4px 4px; }
+  .home-header .tp-parallax-wrap {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .home-header .titles {
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    width: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+.pattern-checks-sm {
+  background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor), repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
+  background-position: 0 0,10px 10px;
+  background-size: calc(2 * 10px) calc(2 * 10px); }
+
+.pattern-checks-md {
+  background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor), repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
+  background-position: 0 0,25px 25px;
+  background-size: calc(2 * 25px) calc(2 * 25px); }
+
+.pattern-checks-lg {
+  background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor), repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
+  background-position: 0 0,50px 50px;
+  background-size: calc(2 * 50px) calc(2 * 50px); }
+
+.pattern-checks-xl {
+  background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor), repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
+  background-position: 0 0,100px 100px;
+  background-size: calc(2 * 100px) calc(2 * 100px); }
+
+.pattern-grid-sm {
+  background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: 10px 10px; }
+
+.pattern-grid-md {
+  background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: 25px 25px; }
+
+.pattern-grid-lg {
+  background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: 50px 50px; }
+
+.pattern-grid-xl {
+  background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: 100px 100px; }
+
+.pattern-dots-sm {
+  background-image: radial-gradient(currentColor 0.5px, transparent 0.5px);
+  background-size: calc(10 * .5px) calc(10 * .5px); }
+
+.pattern-dots-md {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px); }
+
+.pattern-dots-lg {
+  background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+  background-size: calc(10 * 1.5px) calc(10 * 1.5px); }
+
+.pattern-dots-xl {
+  background-image: radial-gradient(currentColor 2px, transparent 2px);
+  background-size: calc(10 * 2px) calc(10 * 2px); }
+
+.pattern-cross-dots-sm {
+  background-image: radial-gradient(currentColor 0.5px, transparent 0.5px), radial-gradient(currentColor 0.5px, transparent 0.5px);
+  background-size: calc(20 * .5px) calc(20 * .5px);
+  background-position: 0 0, calc(10 * .5px) calc(10 * .5px); }
+
+.pattern-cross-dots-md {
+  background-image: radial-gradient(currentColor 1px, transparent 1px), radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(20 * 1px) calc(20 * 1px);
+  background-position: 0 0, calc(10 * 1px) calc(10 * 1px); }
+
+.pattern-cross-dots-lg {
+  background-image: radial-gradient(currentColor 1.5px, transparent 1.5px), radial-gradient(currentColor 1.5px, transparent 1.5px);
+  background-size: calc(20 * 1.5px) calc(20 * 1.5px);
+  background-position: 0 0, calc(10 * 1.5px) calc(10 * 1.5px); }
+
+.pattern-cross-dots-xl {
+  background-image: radial-gradient(currentColor 2px, transparent 2px), radial-gradient(currentColor 2px, transparent 2px);
+  background-size: calc(20 * 2px) calc(20 * 2px);
+  background-position: 0 0, calc(10 * 2px) calc(10 * 2px); }
+
+.pattern-vertical-lines-sm {
+  background-image: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 10px 10px; }
+
+.pattern-horizontal-lines-sm {
+  background-image: repeating-linear-gradient(0deg, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 10px 10px; }
+
+.pattern-diagonal-lines-sm {
+  background-image: repeating-linear-gradient(45deg, currentColor 0, currentColor 1px, transparent 0, transparent 50%);
+  background-size: 10px 10px; }
+
+.pattern-vertical-lines-md {
+  background-image: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 25px 25px; }
+
+.pattern-horizontal-lines-md {
+  background-image: repeating-linear-gradient(0deg, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 25px 25px; }
+
+.pattern-diagonal-lines-md {
+  background-image: repeating-linear-gradient(45deg, currentColor 0, currentColor 1px, transparent 0, transparent 50%);
+  background-size: 25px 25px; }
+
+.pattern-vertical-lines-lg {
+  background-image: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 50px 50px; }
+
+.pattern-horizontal-lines-lg {
+  background-image: repeating-linear-gradient(0deg, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 50px 50px; }
+
+.pattern-diagonal-lines-lg {
+  background-image: repeating-linear-gradient(45deg, currentColor 0, currentColor 1px, transparent 0, transparent 50%);
+  background-size: 50px 50px; }
+
+.pattern-vertical-lines-xl {
+  background-image: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 100px 100px; }
+
+.pattern-horizontal-lines-xl {
+  background-image: repeating-linear-gradient(0deg, currentColor, currentColor 1px, transparent 1px, transparent);
+  background-size: 100px 100px; }
+
+.pattern-diagonal-lines-xl {
+  background-image: repeating-linear-gradient(45deg, currentColor 0, currentColor 1px, transparent 0, transparent 50%);
+  background-size: 100px 100px; }
+
+.pattern-vertical-stripes-sm {
+  background-image: linear-gradient(90deg, transparent 50%, currentColor 50%);
+  background-size: 10px 10px; }
+
+.pattern-horizontal-stripes-sm {
+  background-image: linear-gradient(0deg, transparent 50%, currentColor 50%);
+  background-size: 10px 10px; }
+
+.pattern-diagonal-stripes-sm {
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, currentColor 10px, currentColor calc(2 * 10px)); }
+
+.pattern-vertical-stripes-md {
+  background-image: linear-gradient(90deg, transparent 50%, currentColor 50%);
+  background-size: 25px 25px; }
+
+.pattern-horizontal-stripes-md {
+  background-image: linear-gradient(0deg, transparent 50%, currentColor 50%);
+  background-size: 25px 25px; }
+
+.pattern-diagonal-stripes-md {
+  background: repeating-linear-gradient(45deg, transparent, transparent 25px, currentColor 25px, currentColor calc(2 * 25px)); }
+
+.pattern-vertical-stripes-lg {
+  background-image: linear-gradient(90deg, transparent 50%, currentColor 50%);
+  background-size: 50px 50px; }
+
+.pattern-horizontal-stripes-lg {
+  background-image: linear-gradient(0deg, transparent 50%, currentColor 50%);
+  background-size: 50px 50px; }
+
+.pattern-diagonal-stripes-lg {
+  background: repeating-linear-gradient(45deg, transparent, transparent 50px, currentColor 50px, currentColor calc(2 * 50px)); }
+
+.pattern-vertical-stripes-xl {
+  background-image: linear-gradient(90deg, transparent 50%, currentColor 50%);
+  background-size: 100px 100px; }
+
+.pattern-horizontal-stripes-xl {
+  background-image: linear-gradient(0deg, transparent 50%, currentColor 50%);
+  background-size: 100px 100px; }
+
+.pattern-diagonal-stripes-xl {
+  background: repeating-linear-gradient(45deg, transparent, transparent 100px, currentColor 100px, currentColor calc(2 * 100px)); }
+
+.pattern-zigzag-sm {
+  background: linear-gradient(135deg, currentColor 25%, transparent 25%) -10px 0, linear-gradient(225deg, currentColor 25%, transparent 25%) -10px 0, linear-gradient(315deg, currentColor 25%, transparent 25%), linear-gradient(45deg, currentColor 25%, transparent 25%);
+  background-size: calc(2 * 10px) calc(2 * 10px); }
+
+.pattern-zigzag-md {
+  background: linear-gradient(135deg, currentColor 25%, transparent 25%) -25px 0, linear-gradient(225deg, currentColor 25%, transparent 25%) -25px 0, linear-gradient(315deg, currentColor 25%, transparent 25%), linear-gradient(45deg, currentColor 25%, transparent 25%);
+  background-size: calc(2 * 25px) calc(2 * 25px); }
+
+.pattern-zigzag-lg {
+  background: linear-gradient(135deg, currentColor 25%, transparent 25%) -50px 0, linear-gradient(225deg, currentColor 25%, transparent 25%) -50px 0, linear-gradient(315deg, currentColor 25%, transparent 25%), linear-gradient(45deg, currentColor 25%, transparent 25%);
+  background-size: calc(2 * 50px) calc(2 * 50px); }
+
+.pattern-zigzag-xl {
+  background: linear-gradient(135deg, currentColor 25%, transparent 25%) -100px 0, linear-gradient(225deg, currentColor 25%, transparent 25%) -100px 0, linear-gradient(315deg, currentColor 25%, transparent 25%), linear-gradient(45deg, currentColor 25%, transparent 25%);
+  background-size: calc(2 * 100px) calc(2 * 100px); }
+
+.pattern-triangles-sm {
+  background-image: linear-gradient(45deg, currentColor 50%, transparent 50%);
+  background-size: 10px 10px; }
+
+.pattern-triangles-md {
+  background-image: linear-gradient(45deg, currentColor 50%, transparent 50%);
+  background-size: 25px 25px; }
+
+.pattern-triangles-lg {
+  background-image: linear-gradient(45deg, currentColor 50%, transparent 50%);
+  background-size: 50px 50px; }
+
+.pattern-triangles-xl {
+  background-image: linear-gradient(45deg, currentColor 50%, transparent 50%);
+  background-size: 100px 100px; }
+
+.text-pattern {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.pattern-w-sm {
+  width: 10px; }
+
+.pattern-h-sm {
+  height: 10px; }
+
+.pattern-w-md {
+  width: 25px; }
+
+.pattern-h-md {
+  height: 25px; }
+
+.pattern-w-lg {
+  width: 50px; }
+
+.pattern-h-lg {
+  height: 50px; }
+
+.pattern-w-xl {
+  width: 100px; }
+
+.pattern-h-xl {
+  height: 100px; }
+
+/*# sourceMappingURL=pattern.min.css.map */
+nav {
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: var(--bg-color); }
+  nav .nav_wrap {
+    max-width: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+    height: 100px; }
+  nav .nav ul {
+    display: inline-flex;
+    grid-gap: 2%;
+    width: 100%; }
+    nav .nav ul li {
+      display: inline; }
+      nav .nav ul li a {
+        color: var(--text-color);
+        font-weight: bold;
+        text-transform: uppercase; }
+        nav .nav ul li a:hover {
+          color: var(--brightBlue); }
+      nav .nav ul li ul.sub-menu {
+        display: none; }
+  nav .switch {
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */ }
+    nav .switch .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px; }
+    nav .switch .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    nav .switch .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #DB4500;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    nav .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    nav .switch input:checked + .slider {
+      background-color: #0fbdbd; }
+    nav .switch input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3; }
+    nav .switch input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px); }
+    nav .switch .slider.round {
+      border-radius: 34px; }
+    nav .switch .slider.round:before {
+      border-radius: 50%; }
+
+.theme-btn {
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent; }
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.home-header {
+  height: 100vh;
+  background-image: repeating-linear-gradient(-45deg, rgba(102, 99, 99, 0.25), rgba(81, 77, 77, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 4px 4px; }
+  .home-header .tp-parallax-wrap {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .home-header .titles {
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    width: 100%; }
+
+
+/*# sourceMappingURL=about.css.map*/

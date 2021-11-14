@@ -1,0 +1,48 @@
+
+
+ @mixin vertical { 
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+:root,
+:root.light {
+    --bg-color: #ffffff;
+    --text-color: #171717;
+    --brightBlue: #0fbdbd;
+    --brightPurple: #be77df;
+    --grey: #424242;
+    --squishy-image: url('../../img/squish-day1.png');
+    --coaster-bg: url('../../img/coaster-day.png');
+    --port-overlay: rgba(15, 189, 189, 0.70);
+    --text-shadow: 6px 6px white;
+    
+
+}
+ 
+:root.halloween-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --brightBlue: #DB4500;
+  --brightPurple: #330080;
+  --squishy-image: url('../../img/squish-night.png');
+  --coaster-bg: url('../../img/coaster-night.png');
+  --port-overlay: rgba(51, 0, 128, 0.70);
+  --text-shadow: 6px 6px white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
