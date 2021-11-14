@@ -1,0 +1,8 @@
+node_modules/
+
+plugins/gutes-blocks/build/
+plugins/gutes-blocks/package-lock.json
+
+
+themes/ashloves/assets/package-lock.json
+webpackSettings.js
