@@ -21,6 +21,8 @@
 	height: 100vh;
 	background-image: repeating-linear-gradient(-45deg, rgba(102, 99, 99, 0.25), rgba(81, 77, 77, 0.25) 1px, transparent 1px, transparent 6px);
 	background-size: 4px 4px;
+	z-index: 100;
+	position: relative;
 	.tp-parallax-wrap {
 		height: 100vh;
 		@include vertical;

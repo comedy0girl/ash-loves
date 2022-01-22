@@ -17,34 +17,9 @@ const IMG_DIR = path.resolve(__dirname, "src") + "/img";
 const BUILD_DIR = path.resolve(__dirname, "build");
 
 const entry = {
-  // blocks from other themes
-  // caseStudyIntro: JS_DIR + "case-study-intro.js",
-  // caseStudyArchive: JS_DIR + "case-study-archive.js",
-  // textImage: JS_DIR + "text-image.js",
-  // threeColumnLayout: JS_DIR + "three-column-layout.js",
-  // relatedPosts: JS_DIR + "related-posts.js",
-  // blogArchive: JS_DIR + "blog-archive.js",
-  // textBulletPoints: JS_DIR + "text-bullet-points.js",
-  // testimonials: JS_DIR + "testimonials.js",
 
-  // catsSection: JS_DIR + "cats-section.js",
-
-  // // CC specific blocks
-  // faq: JS_DIR + "faq.js",
-  // cover: JS_DIR + "cover.js",
-  // textMedia: JS_DIR + "text-media.js",
-  // mediaTextLinks: JS_DIR + "media-text-links.js",
-  // iconAndText: JS_DIR + "icon-and-text.js",
- 
-  // sectionTitle: JS_DIR + "section-title.js",
-  // steps: JS_DIR + "steps.js",
-  // bullets: JS_DIR + "bullets.js",
-
-  // reviews: JS_DIR + "reviews.js",
-  // archive: JS_DIR + "archive.js",
-  // imageLinks: JS_DIR + "image-links.js",
-  // links: JS_DIR + "links.js",
-  // colorSwatches: JS_DIR + "color-swatches.js",
+  beforeAfter: JS_DIR + "before-after.js"
+  
 };
 
 const output = {

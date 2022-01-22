@@ -8,9 +8,9 @@
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       guten-nature-tint
+ * Text Domain:      ash-loves
  *
- * @package           guten-nature-tint
+ * @package           ash-loves
  */
 
 define( 'ACF_BLOCK_TEMPLATE_PATH', plugin_dir_path( __FILE__ ) . 'block-templates/' );

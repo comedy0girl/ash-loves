@@ -4222,7 +4222,8 @@ nav {
   width: 100%;
   z-index: 9999;
   position: fixed;
-  background-color: var(--bg-color); }
+  background-color: var(--bg-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); }
   nav .nav_wrap {
     max-width: 1400px;
     display: -webkit-box;
@@ -4318,7 +4319,9 @@ nav {
 .home-header {
   height: 100vh;
   background-image: repeating-linear-gradient(-45deg, rgba(102, 99, 99, 0.25), rgba(81, 77, 77, 0.25) 1px, transparent 1px, transparent 6px);
-  background-size: 4px 4px; }
+  background-size: 4px 4px;
+  z-index: 100;
+  position: relative; }
   .home-header .tp-parallax-wrap {
     height: 100vh;
     display: -webkit-box;
@@ -4596,7 +4599,8 @@ nav {
   width: 100%;
   z-index: 9999;
   position: fixed;
-  background-color: var(--bg-color); }
+  background-color: var(--bg-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); }
   nav .nav_wrap {
     max-width: 1400px;
     display: -webkit-box;
@@ -4692,7 +4696,9 @@ nav {
 .home-header {
   height: 100vh;
   background-image: repeating-linear-gradient(-45deg, rgba(102, 99, 99, 0.25), rgba(81, 77, 77, 0.25) 1px, transparent 1px, transparent 6px);
-  background-size: 4px 4px; }
+  background-size: 4px 4px;
+  z-index: 100;
+  position: relative; }
   .home-header .tp-parallax-wrap {
     height: 100vh;
     display: -webkit-box;

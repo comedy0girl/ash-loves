@@ -49,7 +49,7 @@ class Assets {
     wp_register_style( 'front-page-css', ASH_LOVES_DIR_PATH_URI . '/assets/build/css/frontPage.css', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/css/frontPage.css' ), 'all' );
     wp_register_style( 'about-css', ASH_LOVES_DIR_PATH_URI . '/assets/build/css/about.css', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/css/about.css' ), 'all' );
     wp_register_style( 'portfolio-css', ASH_LOVES_DIR_PATH_URI . '/assets/build/css/portfolio.css', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/css/portfolio.css' ), 'all' );
-     wp_register_style( 'singles-css', ASH_LOVES_DIR_PATH_URI . '/assets/build/css/singles.css', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/css/singles.css' ), 'all' );
+     wp_register_style( 'single-css', ASH_LOVES_DIR_PATH_URI . '/assets/build/css/single.css', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/css/single.css' ), 'all' );
     
     
     
@@ -62,12 +62,13 @@ class Assets {
     elseif ( is_page_template('about-me-template.php') ) {
       wp_enqueue_style( 'about-css' );
     }
-    elseif ( is_page_template('blender-port.php') ) {
+    elseif ( is_single() ) {
+      wp_enqueue_style( 'single-css' );
+    }
+    elseif ( is_page_template('page-portfolio.php') ) {
       wp_enqueue_style( 'portfolio-css' );
     }
-    elseif ( is_page_template('single-blender.php') ) {
-      wp_enqueue_style( 'singles-css' );
-    }
+    
   }
 
   /**
@@ -83,7 +84,7 @@ class Assets {
 
     wp_register_script( 'portfolio-js', ASH_LOVES_DIR_PATH_URI . '/assets/build/js/portfolio.js', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/js/portfolio.js' ), 'all' );
 
-     wp_register_script( 'singles-js', ASH_LOVES_DIR_PATH_URI . '/assets/build/js/singles.js', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/js/singles.js' ), 'all' );
+     wp_register_script( 'single-js', ASH_LOVES_DIR_PATH_URI . '/assets/build/js/single.js', [], filemtime( ASH_LOVES_DIR_PATH . '/assets/build/js/single.js' ), 'all' );
     
     
     $site_data = [
@@ -100,13 +101,14 @@ class Assets {
     elseif ( is_page_template('about-me-template.php') ) {
       wp_enqueue_script( 'about-js' );
     }
+    elseif ( is_single() ) {
+      wp_enqueue_script( 'single-js' );
+    }
      
-    elseif ( is_page_template('blender-port.php') ) {
+    elseif ( is_page_template('page-portfolio.php') ) {
       wp_enqueue_script( 'portfolio-js' );
     }
-    elseif ( is_page_template('single-blender.php') ) {
-      wp_enqueue_script( 'singles-js' );
-    }
+    
 
    
    

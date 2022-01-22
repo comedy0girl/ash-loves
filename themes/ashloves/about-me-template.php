@@ -13,7 +13,7 @@ get_header();
   <div class="centered">
     <?php the_content(); ?>
   </div>
-  <?php get_template_part( '/template-parts/components/contact', 'form'); ?>
+  <!-- <?php get_template_part( '/template-parts/components/contact', 'form'); ?> -->
 </main>
 
 <?php

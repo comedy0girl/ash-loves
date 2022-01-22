@@ -8,9 +8,10 @@
 get_header();
 ?>
 
+<?php get_template_part( '/template-parts/header/nav' ); ?> 
+
 <main id="main" class="site-main" role="main">
 
-  <?php get_template_part( '/template-parts/header/nav' ); ?>
   <div class="home-header">
     <div class="tp-parallax-wrap">
       <div class="tp-caption squishy animate__animated animate__bounceInDown animate__delay-2s" id="squishy">
@@ -46,6 +47,8 @@ get_header();
         <h2 class="shadow-stroke"><?php the_title(); ?>
          
         </h2>
+
+
          <div class="shadow"></div>
         </a>
       </div>

@@ -24,7 +24,7 @@ const entry = {
   frontPage: JS_DIR + "front-page.js",
   about: JS_DIR + "about.js",
   portfolio: JS_DIR + "portfolio.js",
-  singles: JS_DIR + "singles.js",
+  single: JS_DIR + "single.js",
 };
 
 const output = {
